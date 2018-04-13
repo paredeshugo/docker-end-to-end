@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    image: 'random-password-api'
+    build: .
+    container_name: 'random-password-api'
+    restart: 'always'
+    ports:
+      - 9098:80
